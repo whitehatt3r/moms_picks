@@ -39,7 +39,7 @@ def generate_strategic_lottery_numbers(previous_winning_numbers, num_numbers=5, 
 
 
 def main():
-    csv_file = "../.venv/Scripts/Lottery_Mega_Millions_Winning_Numbers__Beginning_2002.csv"
+    csv_file = "../data/Lottery_Mega_Millions_Winning_Numbers__Beginning_2002.csv"
     previous_winning_numbers = load_previous_winning_numbers_from_csv(csv_file)
     new_numbers, power_ball = generate_strategic_lottery_numbers(previous_winning_numbers)
     return new_numbers, power_ball
